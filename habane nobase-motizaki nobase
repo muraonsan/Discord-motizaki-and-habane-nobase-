@@ -1,0 +1,10 @@
+ if (message.content.match(/もちざき|餅崎/)){
+    let text = "日本の端まで伸ばせ!!!!!";
+    sendMsg(message.channel.id, text);
+    return;
+  }
+  if (message.content.match(/葉羽|はばねん/)){
+    let text = "葉羽をソ連までのばせ!!!!!!!!!!!!!!!";
+    sendMsg(message.channel.id, text);
+    return;
+  }
