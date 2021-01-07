@@ -1,0 +1,4 @@
+ if(message.isMemberMentioned(client.user)){
+    sendReply(message, "呼びましたか？");
+    return;
+  }
