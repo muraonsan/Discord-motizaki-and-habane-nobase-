@@ -1,0 +1,11 @@
+client.on('message', message =>{
+  if (message.author.id == client.user.id || message.author.bot){
+    return;
+  }
+  if (message.content.match(/^！あきさん/) ||
+      (message.isMemberMentioned(client.user) && message.content.match(/おみくじ/))){
+    let arr = ["なに？", "(  '-'   )", "(   ᐛ)ﾊﾞﾅﾅ", "( 'ω')ノ", "ちぎって絞ってやる", "おい馬鹿になてるのか？ww"];
+    let weight = [30, 30, 30, 30, 30 ,10];
+    lotteryByWeight(message.channel.id, arr, weight);
+  }
+});
